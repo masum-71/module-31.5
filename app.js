@@ -58,17 +58,59 @@ console.log(multipliedArray);
 
 const nums = [2, 15, 41, 52, 21, 44, 12, 99];
 const oddNum = nums.filter((num) => num % 2 === 1);
-console.log(oddNum)
+console.log(oddNum);
 
 //Problem: 7
 
 const objArray = [
-    {name: "a" , price: 12000},
-    {name: "b", price: 7000},
-    {name: "c", price: 5000},
-    {name: "d", price: 8000 }
-]
+  { name: "a", price: 12000 },
+  { name: "b", price: 7000 },
+  { name: "c", price: 5000 },
+  { name: "d", price: 8000 },
+];
+const selectedObj = objArray.filter((elem) => elem.price === 5000);
+console.log(selectedObj);
 
-const selectedObj = objArray.filter(elem => elem.price === 5000);
+//Problem: 8
+const simple = {
+  id: 1,
+  cost: 5000,
+};
 
-console.log(selectedObj)
+const { cost } = simple;
+console.log(cost);
+
+//Problem: 9
+
+const destruc = [2, 3, 4, 5, 6];
+
+const [a, b, three] = destruc;
+
+console.log(three);
+
+const defaultPara = (a, b, c = 7) => a + b + c;
+console.log(defaultPara(5, 9, 8));
+
+
+const nestedObj = {
+    name: 'masum',
+    age: 30,
+    friends: [
+        {
+        name: 'mim',
+        age: 26,
+        friends: {
+            name: 'aymon',
+            age: 14
+        }
+     },
+     {
+        name: 'lingkon',
+        age: 31
+     },
+
+    ],
+    job: 'govt',
+}
+
+console.log(nestedObj.friends[0]?.friends.name)
