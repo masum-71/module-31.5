@@ -18,4 +18,32 @@ const obj = {
 
 const objStr = `I am ${obj.name} and my age is ${obj.age}`;
 
-console.log(objStr)
+console.log(objStr);
+
+//Problem: 3
+//3.1
+const division = (x) => x / 5;
+console.log(division(15));
+
+//3.2
+
+const addTwo = (a, b) => {
+  const addA = a + 2;
+  const addB = b + 2;
+  const multiply = addA * addB;
+  return multiply;
+};
+
+console.log(addTwo(2, 2));
+//3.3
+
+const threePara = (a, b, c) => a * b * c;
+console.log(threePara(3, 4, 5));
+//3.4
+
+const twoPara = (a,b) => {
+    const addA = a + 2;
+    const addB = b + 2;
+    return addA * addB;
+}
+console.log(twoPara(3,5))
